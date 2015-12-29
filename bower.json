@@ -1,0 +1,22 @@
+{
+  "name": "accelerator",
+  "homepage": "https://github.com/sebastiankr/accelerator",
+  "authors": [
+    "Sebastian Kropp <sebastian.kropp@outlook.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#~0.97.5",
+    "mui": "~0.2.9"
+  }
+}
