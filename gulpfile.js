@@ -35,6 +35,7 @@ gulp.task('sass', function () {
             includePaths : [
                 'node_modules/muicss/src/sass/'
                 ,'node_modules/materialize-css/sass/'
+                ,'node_modules/material-design-lite/src'
                 ] })
                 .on('error', sass.logError))
         .pipe(gulp.dest("app/client"))
