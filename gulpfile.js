@@ -30,7 +30,7 @@ gulp.task('serve', function () {
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function () {
-    return gulp.src("styles/default.scss")
+    return gulp.src("styles/*.scss")
         .pipe(sass({ 
             includePaths : [
                 'node_modules/muicss/src/sass/'
@@ -38,7 +38,7 @@ gulp.task('sass', function () {
                 ,'node_modules/material-design-lite/src'
                 ] })
                 .on('error', sass.logError))
-        .pipe(gulp.dest("app/client"))
+        .pipe(gulp.dest("app/public/css"))
         .pipe(browserSync.stream());
 });
 
