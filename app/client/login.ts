@@ -1,5 +1,5 @@
-/// <reference path="../../typings/angular2-meteor.d.ts" />
-/// <reference path="../../typings/meteor-accounts.d.ts" />
+/// <reference path="../typings/angular2-meteor.d.ts" />
+/// <reference path="../typings/meteor-accounts.d.ts" />
 
 import {Component, View} from 'angular2/core';
 import {NgIf, FORM_DIRECTIVES, Control, FormBuilder, ControlGroup, Validators} from 'angular2/common';

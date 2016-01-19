@@ -2,7 +2,7 @@
 /// <reference path="../typings/meteor-accounts.d.ts" />
 
 import {Component} from 'angular2/core';
-import {RouteConfig, RouterOutlet, ROUTER_DIRECTIVES} from 'angular2/router';
+import {Router, RouteConfig, RouterOutlet, ROUTER_DIRECTIVES} from 'angular2/router';
 
 import {InjectUser} from 'meteor-accounts';
 
@@ -53,7 +53,11 @@ export class AdminPanel {
     user: Meteor.User;
     public isHidden = false;
     public isActive = false;
-    constructor() {
+    constructor(router: Router) {
+       if (!this.user) {
+            router.navigateByUrl('/login')
+        }
+        console.log(this.user);
         console.log('Home');
         console.log(this.user);
     }
